@@ -1,0 +1,17 @@
+{
+  "name": "pokelegends",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Jiang",
+  "license": "ISC",
+  "dependencies": {
+    "backbone-model": "^1.0.10",
+    "jquery": "^3.3.1",
+    "node-sass": "^4.7.2",
+    "underscore": "^1.8.3"
+  }
+}
