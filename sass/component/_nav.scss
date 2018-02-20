@@ -1,0 +1,27 @@
+.nav{
+  list-style: none;
+  font-size: 1.7rem;
+  display: block;
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+  font-weight: 700;
+
+  &__list{
+    display: inline-block;
+
+    &:not(:last-child){
+      padding-right: 3rem;
+    }
+  }
+
+  &__link{
+    color: $color-white;
+
+    &:hover{
+      color: $color-primary-dark;
+    }
+  }
+
+
+}

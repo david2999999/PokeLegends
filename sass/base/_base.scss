@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  box-sizing: inherit;
+}
+
+a{
+  &:active,
+  &:visited{
+    text-decoration: none !important;
+    outline: none !important;
+  }
+
+  &:hover{
+    text-decoration: none !important;
+  }
+}
+
+button{
+
+  &:focus {
+    outline: none !important;
+  }
+
+}
+body, html {
+  // base font size will be 10
+  // 16 * 62.5% = 10
+  // the value of 10 will be used with rem all over the page
+  box-sizing: border-box;
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  background-color: $color-primary;
+  overflow-x: hidden;
+
+  //@include respond(big-desktop){
+  //  font-size: 62.5%;
+  //}
+  //
+  //@include respond(tab-land){
+  //  font-size: 56.25%;
+  //}
+  //
+  //@include respond(tab-port) {
+  //  font-size: 50%;
+  //}
+  //
+  //@include respond(phone) {
+  //  font-size: 45%;
+  //}
+
+
+}
+
+
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
+}

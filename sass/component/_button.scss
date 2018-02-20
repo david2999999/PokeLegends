@@ -1,0 +1,58 @@
+.button{
+  transition: all .3s;
+
+  &__ghost{
+    background-color: transparent;
+    border-radius: 30px;
+    border: 2px $color-white solid;
+    padding: .3rem 2.5rem .3rem 2.5rem;
+    font-weight: 700;
+    margin-top: -1rem;
+  }
+  &:hover{
+    cursor: pointer;
+  }
+
+  &:hover a {
+    color: $color-white;
+  }
+
+  &__primary{
+    position: relative;
+    color: white;
+    font-size: 3rem;
+    //border: 1px solid white;
+    border-radius: 10rem;
+    @include linear-gradient-3;
+    padding: 2rem 10rem 2rem 10rem;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .35);
+    transition: all .3s;
+
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+
+    &:hover{
+      //transform: translateY(-3px) scale(1.05);
+      filter: brightness(110%);
+      box-shadow: 0 1rem 4rem rgba($color-black, .55);
+
+    }
+  }
+}
+
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,14 @@
+.header{
+  background-image:
+          linear-gradient(to bottom left, rgba($color-primary,.85), rgba($color-primary-dark, .85)),
+          url("../img/background/main.jpg");
+  background-size: cover;
+  height: 100vh;
+  background-position: top;
+
+  &__title{
+    display: block;
+    @include absCenter;
+    text-align: center;
+  }
+}

@@ -1,0 +1,154 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  box-sizing: inherit; }
+
+a:active, a:visited {
+  text-decoration: none !important;
+  outline: none !important; }
+
+a:hover {
+  text-decoration: none !important; }
+
+button:focus {
+  outline: none !important; }
+
+body, html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  background-color: #0ABFBC;
+  overflow-x: hidden; }
+
+::selection {
+  background-color: #0ABFBC;
+  color: white; }
+
+.heading_primary {
+  color: white;
+  backface-visibility: hidden;
+  text-transform: uppercase; }
+  .heading_primary__main {
+    font-size: 9rem;
+    margin-bottom: 2rem;
+    letter-spacing: 3.5rem;
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+  .heading_primary__secondary {
+    font-size: 2.2rem;
+    margin-bottom: 5rem;
+    font-weight: 300;
+    -webkit-animation-name: slideInUp;
+    animation-name: slideInUp;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+
+@keyframes slideInUp {
+  from {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible; }
+  to {
+    transform: translate3d(0, 0, 0); } }
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3); }
+  50% {
+    opacity: 1; } }
+
+.button {
+  transition: all .3s; }
+  .button__ghost {
+    background-color: transparent;
+    border-radius: 30px;
+    border: 2px white solid;
+    padding: .3rem 2.5rem .3rem 2.5rem;
+    font-weight: 700;
+    margin-top: -1rem; }
+  .button:hover {
+    cursor: pointer; }
+  .button:hover a {
+    color: white; }
+  .button__primary {
+    position: relative;
+    color: white;
+    font-size: 3rem;
+    border-radius: 10rem;
+    background: #fd746c;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #ff9068, #fd746c);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #ff9068, #fd746c);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 2rem 10rem 2rem 10rem;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.35);
+    transition: all .3s;
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+    .button__primary:hover {
+      filter: brightness(110%);
+      box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.55); }
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3); }
+  50% {
+    opacity: 1; } }
+
+.logo {
+  position: absolute;
+  top: 3.5rem;
+  left: 3.5rem;
+  color: white;
+  font-family: lobster, 'cursive';
+  font-size: 4rem; }
+
+.nav {
+  list-style: none;
+  font-size: 1.7rem;
+  display: block;
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+  font-weight: 700; }
+  .nav__list {
+    display: inline-block; }
+    .nav__list:not(:last-child) {
+      padding-right: 3rem; }
+  .nav__link {
+    color: white; }
+    .nav__link:hover {
+      color: #FC354C; }
+
+.header {
+  background-image: linear-gradient(to bottom left, rgba(10, 191, 188, 0.85), rgba(252, 53, 76, 0.85)), url("../img/background/main.jpg");
+  background-size: cover;
+  height: 100vh;
+  background-position: top; }
+  .header__title {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+
+@Import 'pages/index';
