@@ -30,15 +30,15 @@
     //border: 1px solid white;
     border-radius: 10rem;
     @include linear-gradient-3;
-    padding: 2rem 10rem 2rem 10rem;
+    padding: 2rem 12rem 2rem 12rem;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .35);
     transition: all .3s;
     backface-visibility: hidden;
 
     -webkit-animation-name: zoomIn;
     animation-name: zoomIn;
-    -webkit-animation-duration: 1.5s;
-    animation-duration: 1.5s;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 
