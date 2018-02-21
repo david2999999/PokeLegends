@@ -36,8 +36,9 @@ body, html {
   font-size: 62.5%;
   padding: 0;
   margin: 0;
-  background-color: $color-primary;
   overflow-x: hidden;
+  background-color: $color-grey-light;
+
 
   //@include respond(big-desktop){
   //  font-size: 62.5%;

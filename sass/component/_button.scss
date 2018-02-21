@@ -8,14 +8,20 @@
     padding: .3rem 2.5rem .3rem 2.5rem;
     font-weight: 700;
     margin-top: -1rem;
-  }
-  &:hover{
-    cursor: pointer;
+
+
+    &:hover{
+      cursor: pointer;
+      border: 2px $color-primary-3 solid;
+      transform: translateY(-1px);
+    }
+
+    &:hover a {
+      color: $color-primary-3;
+    }
+
   }
 
-  &:hover a {
-    color: $color-white;
-  }
 
   &__primary{
     position: relative;
@@ -27,6 +33,7 @@
     padding: 2rem 10rem 2rem 10rem;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .35);
     transition: all .3s;
+    backface-visibility: hidden;
 
     -webkit-animation-name: zoomIn;
     animation-name: zoomIn;
@@ -40,8 +47,13 @@
       //transform: translateY(-3px) scale(1.05);
       filter: brightness(110%);
       box-shadow: 0 1rem 4rem rgba($color-black, .55);
-
+      cursor: pointer;
+      transform: translateY(-1px);
     }
+  }
+
+  &__icon{
+    margin-right: 10px;
   }
 }
 
