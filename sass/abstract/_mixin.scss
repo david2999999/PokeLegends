@@ -5,25 +5,26 @@
 }
 
 @mixin linear-gradient-gallery{
-  background: #FC354C;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top right, #0ABFBC, #FC354C);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top right, #0ABFBC, #FC354C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #000046;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 
 @mixin linear-gradient-2{
-  background: #5f2c82;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right bottom, #49a09d, #5f2c82);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right bottom, #49a09d, #5f2c82); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #0cebeb;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #29ffc6, #20e3b2, #0cebeb);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #29ffc6, #20e3b2, #0cebeb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 @mixin linear-gradient-3{
   background: #fd746c;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #ff9068, #fd746c);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #ff9068, #fd746c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
 }
+
+
 
 
 @mixin box-shadow{

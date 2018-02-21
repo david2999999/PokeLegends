@@ -67,21 +67,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_gallery.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sass/component/_gallery.scss">
+      <file leaf-file-name="_diamond-gallery.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sass/component/_diamond-gallery.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="442">
+              <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_diamond-gallery.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sass/component/_diamond-gallery.scss">
+      <file leaf-file-name="_variables.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sass/abstract/_variables.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="639">
-              <caret line="280" column="24" lean-forward="false" selection-start-line="280" selection-start-column="24" selection-end-line="280" selection-end-column="24" />
+            <state relative-caret-position="156">
+              <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_mixin.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sass/abstract/_mixin.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -91,16 +101,6 @@
         <entry file="file://$PROJECT_DIR$/img/gallery/1.png">
           <provider selected="true" editor-type-id="images">
             <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_battle.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sass/pages/_battle.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
           </provider>
         </entry>
       </file>
@@ -137,7 +137,6 @@
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/js/script.js" />
         <option value="$PROJECT_DIR$/sass/component/_logo.scss" />
-        <option value="$PROJECT_DIR$/sass/abstract/_mixin.scss" />
         <option value="$PROJECT_DIR$/sass/base/_typography.scss" />
         <option value="$PROJECT_DIR$/sass/abstract/_variables.scss" />
         <option value="$PROJECT_DIR$/sass/component/_nav.scss" />
@@ -148,6 +147,7 @@
         <option value="$PROJECT_DIR$/sass/pages/_index.scss" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/sass/component/_diamond-gallery.scss" />
+        <option value="$PROJECT_DIR$/sass/abstract/_mixin.scss" />
       </list>
     </option>
   </component>
@@ -291,12 +291,12 @@
       <workItem from="1519152945784" duration="1936000" />
       <workItem from="1519155983371" duration="9199000" />
       <workItem from="1519185567016" duration="37000" />
-      <workItem from="1519248204814" duration="715000" />
+      <workItem from="1519248204814" duration="1029000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14026000" />
+    <option name="totallyTimeSpent" value="14340000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -606,13 +606,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/abstract/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sass/base/_base.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -631,14 +624,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="19" column="15" lean-forward="false" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/abstract/_mixin.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="15" column="54" lean-forward="false" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -716,8 +701,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/component/_diamond-gallery.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="639">
-          <caret line="280" column="24" lean-forward="false" selection-start-line="280" selection-start-column="24" selection-end-line="280" selection-end-column="24" />
+        <state relative-caret-position="442">
+          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/abstract/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/abstract/_mixin.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>

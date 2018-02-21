@@ -15,7 +15,7 @@
     list-style: none;
     width: 15rem;
     height: 15rem;
-    @include linear-gradient-3;
+    @include linear-gradient-gallery;
     transform: rotate(45deg);
     transition: .5s;
     margin: -6rem;
@@ -25,7 +25,7 @@
     &:hover{
       opacity: 1;
       cursor: pointer;
-      @include linear-gradient-gallery;
+      @include linear-gradient-2;
       transform: translateY(-7px) rotate(45deg);
 
     }
