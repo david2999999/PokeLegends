@@ -1,0 +1,100 @@
+.pokemon-card{
+  position: relative;
+  width: 40rem;
+  height: 50rem;
+  background-color: white;
+  border-radius: 2rem;
+  @include box-shadow-dark;
+  transition: all .4s;
+  margin: 2rem 5rem 2rem 5rem;
+  display: inline-block;
+
+
+  &:hover{
+    cursor: pointer;
+    transform: translateY(-4px);
+  }
+
+  &:hover &__img{
+    width: 46rem;
+    transform: translateY(-4px);
+  }
+
+  &:hover &__img-2{
+    width: 52rem;
+    transform: translateY(-4px);
+  }
+  &__bg{
+    background: #7b4397;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom left, #dc2430, #7b4397);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom left, #dc2430, #7b4397); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 25rem;
+    border-radius: 2rem 2rem 0 0 ;
+
+    &-blue{
+      background: #24C6DC;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to top, #514A9D, #24C6DC);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to top, #514A9D, #24C6DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    &-green{
+      background: #1D976C;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #93F9B9, #1D976C);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #93F9B9, #1D976C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+  }
+
+  &__img{
+    position: absolute;
+    width: 44rem;
+    top: -14rem;
+    transition: all .4s;
+    backface-visibility: hidden;
+
+    &-2{
+      width: 50rem;
+      top: -10rem;
+      left: -2rem;
+    }
+  }
+
+  &__desc{
+    color: $color-grey-dark;
+    text-align: center;
+    padding: 2rem;
+
+    &-name{
+      font-size: 2.8rem;
+      font-weight: bold;
+      @include linear-gradient-mega;
+      padding-bottom: 1rem;
+    }
+
+    &-text{
+      font-size: 1.6rem;
+    }
+  }
+
+  &__star{
+    color: $color-primary-dark;
+    margin-bottom: 2rem;
+  }
+
+  &__tag{
+    font-size: 1.3rem;
+    display: block;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    padding: 1rem 2rem 1rem 2rem;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 3rem;
+    left: -3rem;
+    background: #e65c00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #F9D423, #e65c00);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #F9D423, #e65c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  }
+}

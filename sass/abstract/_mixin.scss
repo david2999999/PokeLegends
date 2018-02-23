@@ -31,6 +31,12 @@
   color: transparent;
 }
 
+@mixin linear-gradient-mega{
+  background-image: linear-gradient(to top left, #4BC0C8, #C779D0, #FEAC5E);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 
 
 @mixin box-shadow{

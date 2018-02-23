@@ -2,7 +2,6 @@
   //padding-top: 60rem;
   padding: 60rem 0 47rem 0;
   position: relative;
-
   overflow: hidden;
 }
 
@@ -14,4 +13,14 @@
           url("../img/background/main2.jpg");
   background-size: cover;
   position: relative;
+}
+
+
+.card-gallery{
+  background-color: $color-grey-light;
+  padding: 15rem;
+
+  &__card-list{
+    display: inline-block;
+  }
 }

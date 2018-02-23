@@ -70,6 +70,17 @@ body, html {
   text-align: center;
   top: 10rem; }
 
+.heading_secondary-2 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #0ABFBC, #FC354C);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+  padding-bottom: 8rem; }
+
 .heading_secondary-white {
   font-size: 5rem;
   text-transform: uppercase;
@@ -79,7 +90,8 @@ body, html {
   color: white;
   text-align: center;
   display: block;
-  padding-bottom: 4rem; }
+  padding-bottom: 7rem;
+  text-shadow: 3px 2px grey; }
 
 @keyframes slideInUp {
   from {
@@ -418,6 +430,8 @@ body, html {
     color: #0ABFBC;
     display: block;
     margin-bottom: 2rem; }
+    .battle-card__img-red {
+      color: #FC354C; }
   .battle-card__title {
     color: #777;
     font-size: 2.5rem;
@@ -428,6 +442,92 @@ body, html {
     color: #777;
     font-size: 2rem;
     text-align: center; }
+
+.pokemon-card {
+  position: relative;
+  width: 40rem;
+  height: 50rem;
+  background-color: white;
+  border-radius: 2rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.25);
+  transition: all .4s;
+  margin: 2rem 5rem 2rem 5rem;
+  display: inline-block; }
+  .pokemon-card:hover {
+    cursor: pointer;
+    transform: translateY(-4px); }
+  .pokemon-card:hover .pokemon-card__img {
+    width: 46rem;
+    transform: translateY(-4px); }
+  .pokemon-card:hover .pokemon-card__img-2 {
+    width: 52rem;
+    transform: translateY(-4px); }
+  .pokemon-card__bg {
+    background: #7b4397;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom left, #dc2430, #7b4397);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom left, #dc2430, #7b4397);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 25rem;
+    border-radius: 2rem 2rem 0 0; }
+    .pokemon-card__bg-blue {
+      background: #24C6DC;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to top, #514A9D, #24C6DC);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to top, #514A9D, #24C6DC);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+    .pokemon-card__bg-green {
+      background: #1D976C;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #93F9B9, #1D976C);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #93F9B9, #1D976C);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  .pokemon-card__img {
+    position: absolute;
+    width: 44rem;
+    top: -14rem;
+    transition: all .4s;
+    backface-visibility: hidden; }
+    .pokemon-card__img-2 {
+      width: 50rem;
+      top: -10rem;
+      left: -2rem; }
+  .pokemon-card__desc {
+    color: #777;
+    text-align: center;
+    padding: 2rem; }
+    .pokemon-card__desc-name {
+      font-size: 2.8rem;
+      font-weight: bold;
+      background-image: linear-gradient(to top left, #4BC0C8, #C779D0, #FEAC5E);
+      -webkit-background-clip: text;
+      color: transparent;
+      padding-bottom: 1rem; }
+    .pokemon-card__desc-text {
+      font-size: 1.6rem; }
+  .pokemon-card__star {
+    color: #FC354C;
+    margin-bottom: 2rem; }
+  .pokemon-card__tag {
+    font-size: 1.3rem;
+    display: block;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    padding: 1rem 2rem 1rem 2rem;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 3rem;
+    left: -3rem;
+    background: #e65c00;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #F9D423, #e65c00);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #F9D423, #e65c00);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
 
 .header {
   background-image: linear-gradient(to bottom left, rgba(10, 191, 188, 0.85), rgba(252, 53, 76, 0.85)), url("../img/background/main.jpg");
@@ -453,3 +553,9 @@ body, html {
   background-image: linear-gradient(to right, rgba(10, 191, 188, 0.8), rgba(252, 53, 76, 0.8)), url("../img/background/main2.jpg");
   background-size: cover;
   position: relative; }
+
+.card-gallery {
+  background-color: #eeeeee;
+  padding: 15rem; }
+  .card-gallery__card-list {
+    display: inline-block; }
