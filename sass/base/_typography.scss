@@ -44,9 +44,21 @@
 
   position: absolute;
   text-align: center;
-  left: 50%;
-  top: -50%;
-  transform: translate(-50%, 0);
+  //left: 50%;
+  top: 10rem;
+  //transform: translate(-50%, 0);
+}
+
+.heading_secondary-white{
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 3px;
+  -webkit-background-clip: text;
+  color: white;
+  text-align: center;
+  display: block;
+  padding-bottom: 4rem;
 }
 
 @keyframes slideInUp {

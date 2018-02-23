@@ -1,6 +1,17 @@
 .gallery{
-  margin-top: 60rem;
-  padding: 0 0 100rem 0;
+  //padding-top: 60rem;
+  padding: 60rem 0 47rem 0;
   position: relative;
-  width: 100%;
+
+  overflow: hidden;
+}
+
+.battle{
+  margin-top: 3rem;
+  padding: 15rem;
+  background-image:
+          linear-gradient(to right, rgba($color-primary,.8), rgba($color-primary-dark, .8)),
+          url("../img/background/main2.jpg");
+  background-size: cover;
+  position: relative;
 }
