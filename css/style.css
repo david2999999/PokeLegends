@@ -446,12 +446,12 @@ body, html {
 .pokemon-card {
   position: relative;
   width: 40rem;
-  height: 50rem;
+  height: 51rem;
   background-color: white;
   border-radius: 2rem;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.25);
   transition: all .4s;
-  margin: 2rem 5rem 2rem 5rem;
+  margin: 5rem 5rem 2rem 5rem;
   display: inline-block; }
   .pokemon-card:hover {
     cursor: pointer;
@@ -507,14 +507,14 @@ body, html {
       color: transparent;
       padding-bottom: 1rem; }
     .pokemon-card__desc-text {
-      font-size: 1.6rem; }
+      font-size: 1.6rem;
+      padding: 1rem; }
   .pokemon-card__star {
     color: #FC354C;
     margin-bottom: 2rem; }
   .pokemon-card__tag {
     font-size: 1.3rem;
     display: block;
-    border-radius: 5px;
     color: white;
     font-weight: bold;
     padding: 1rem 2rem 1rem 2rem;
@@ -541,6 +541,64 @@ body, html {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+
+.footer__layer1 {
+  background: #8E0E00;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom left, #1F1C18, #8E0E00);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom left, #1F1C18, #8E0E00);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100%;
+  height: 100%;
+  padding: 7rem 0 7rem 0; }
+
+.footer__layer2 {
+  background-color: #260000;
+  width: 100%;
+  height: 100%;
+  padding: 1rem; }
+
+.footer__logo {
+  font-size: 6rem;
+  font-family: lobster, 'cursive';
+  text-align: center;
+  padding-bottom: 3rem;
+  transition: all .3s; }
+  .footer__logo-link {
+    color: white; }
+    .footer__logo-link:hover {
+      background-image: linear-gradient(to right, #0ABFBC, #FC354C);
+      -webkit-background-clip: text;
+      color: transparent; }
+
+.footer__links {
+  color: white;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  list-style: none;
+  font-weight: bold;
+  transition: all .3s; }
+  .footer__links-list:hover {
+    cursor: pointer;
+    background-image: linear-gradient(to top left, #4BC0C8, #C779D0, #FEAC5E);
+    -webkit-background-clip: text;
+    color: transparent; }
+
+.footer__resource {
+  color: white;
+  font-size: 3.5rem;
+  width: 100%;
+  border-bottom: 1px solid white;
+  margin-bottom: 3rem;
+  font-weight: bold; }
+
+.footer__copyright {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 2px; }
 
 .gallery {
   padding: 60rem 0 47rem 0;

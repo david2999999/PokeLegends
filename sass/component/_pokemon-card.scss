@@ -1,12 +1,12 @@
 .pokemon-card{
   position: relative;
   width: 40rem;
-  height: 50rem;
+  height: 51rem;
   background-color: white;
   border-radius: 2rem;
   @include box-shadow-dark;
   transition: all .4s;
-  margin: 2rem 5rem 2rem 5rem;
+  margin: 5rem 5rem 2rem 5rem;
   display: inline-block;
 
 
@@ -24,6 +24,7 @@
     width: 52rem;
     transform: translateY(-4px);
   }
+
   &__bg{
     background: #7b4397;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom left, #dc2430, #7b4397);  /* Chrome 10-25, Safari 5.1-6 */
@@ -73,6 +74,7 @@
 
     &-text{
       font-size: 1.6rem;
+      padding: 1rem;
     }
   }
 
@@ -84,7 +86,6 @@
   &__tag{
     font-size: 1.3rem;
     display: block;
-    border-radius: 5px;
     color: white;
     font-weight: bold;
     padding: 1rem 2rem 1rem 2rem;
