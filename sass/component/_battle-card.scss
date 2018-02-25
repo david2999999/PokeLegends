@@ -1,3 +1,10 @@
+.battle-card-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
 .battle-card{
   background: rgba($color-grey-light, .86);
   border-radius: 3px;
@@ -5,6 +12,7 @@
   @include box-shadow-dark;
   transition: all .3s;
   margin-bottom: 2rem;
+  width: 50rem;
 
 
   &:hover{

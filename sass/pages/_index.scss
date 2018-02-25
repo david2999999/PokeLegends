@@ -7,7 +7,7 @@
 
 .battle{
   margin-top: 3rem;
-  padding: 15rem;
+  padding: 10rem 0 15rem 0;
   background-image:
           linear-gradient(to right, rgba($color-primary,.8), rgba($color-primary-dark, .8)),
           url("../img/background/main2.jpg");
@@ -18,9 +18,12 @@
 
 .card-gallery{
   background-color: $color-grey-light;
-  padding: 15rem;
+  padding: 10rem 0 15rem 0;
 
   &__card-list{
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
   }
 }

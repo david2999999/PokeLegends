@@ -8,6 +8,7 @@
     height: 100%;
     padding: 7rem 0 7rem 0
   }
+
   &__layer2{
     background-color: #260000;
     width: 100%;
@@ -34,15 +35,27 @@
   }
 
   &__links{
+
+    &-container{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: 0 auto;
+      //width: 150rem;
+    }
+
+
     color: $color-white;
     font-size: 1.5rem;
     letter-spacing: 2px;
     list-style: none;
-    font-weight: bold;
+    font-weight: 500;
     transition: all .3s;
+    text-align: center;
 
 
     &-list{
+      margin: 0 auto;
 
       &:hover{
         cursor: pointer;
@@ -54,7 +67,8 @@
   &__resource{
     color: $color-white;
     font-size: 3.5rem;
-    width: 100%;
+    width: 75%;
+    margin: 0 auto;
     border-bottom: 1px solid white;
     margin-bottom: 3rem;
     font-weight: bold;

@@ -6,23 +6,26 @@
   border-radius: 2rem;
   @include box-shadow-dark;
   transition: all .4s;
-  margin: 5rem 5rem 2rem 5rem;
+  margin: 5rem 0 5rem 0;
   display: inline-block;
 
 
   &:hover{
     cursor: pointer;
     transform: translateY(-4px);
+    z-index: 10;
   }
 
   &:hover &__img{
     width: 46rem;
     transform: translateY(-4px);
+    z-index: 5;
   }
 
   &:hover &__img-2{
     width: 52rem;
     transform: translateY(-4px);
+    z-index: 5;
   }
 
   &__bg{
@@ -52,6 +55,7 @@
     top: -14rem;
     transition: all .4s;
     backface-visibility: hidden;
+    z-index: 5;
 
     &-2{
       width: 50rem;

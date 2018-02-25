@@ -411,13 +411,20 @@ body, html {
       color: #ff9068;
       transform: translateY(-2px); }
 
+.battle-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto; }
+
 .battle-card {
   background: rgba(238, 238, 238, 0.86);
   border-radius: 3px;
   padding: 4rem;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.25);
   transition: all .3s;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  width: 50rem; }
   .battle-card:hover {
     background: #eeeeee;
     transform: translateY(-3px);
@@ -451,17 +458,20 @@ body, html {
   border-radius: 2rem;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.25);
   transition: all .4s;
-  margin: 5rem 5rem 2rem 5rem;
+  margin: 5rem 0 5rem 0;
   display: inline-block; }
   .pokemon-card:hover {
     cursor: pointer;
-    transform: translateY(-4px); }
+    transform: translateY(-4px);
+    z-index: 10; }
   .pokemon-card:hover .pokemon-card__img {
     width: 46rem;
-    transform: translateY(-4px); }
+    transform: translateY(-4px);
+    z-index: 5; }
   .pokemon-card:hover .pokemon-card__img-2 {
     width: 52rem;
-    transform: translateY(-4px); }
+    transform: translateY(-4px);
+    z-index: 5; }
   .pokemon-card__bg {
     background: #7b4397;
     /* fallback for old browsers */
@@ -490,7 +500,8 @@ body, html {
     width: 44rem;
     top: -14rem;
     transition: all .4s;
-    backface-visibility: hidden; }
+    backface-visibility: hidden;
+    z-index: 5; }
     .pokemon-card__img-2 {
       width: 50rem;
       top: -10rem;
@@ -595,18 +606,27 @@ body, html {
   font-size: 1.5rem;
   letter-spacing: 2px;
   list-style: none;
-  font-weight: bold;
-  transition: all .3s; }
-  .footer__links-list:hover {
-    cursor: pointer;
-    background-image: linear-gradient(to top left, #4BC0C8, #C779D0, #FEAC5E);
-    -webkit-background-clip: text;
-    color: transparent; }
+  font-weight: 500;
+  transition: all .3s;
+  text-align: center; }
+  .footer__links-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto; }
+  .footer__links-list {
+    margin: 0 auto; }
+    .footer__links-list:hover {
+      cursor: pointer;
+      background-image: linear-gradient(to top left, #4BC0C8, #C779D0, #FEAC5E);
+      -webkit-background-clip: text;
+      color: transparent; }
 
 .footer__resource {
   color: white;
   font-size: 3.5rem;
-  width: 100%;
+  width: 75%;
+  margin: 0 auto;
   border-bottom: 1px solid white;
   margin-bottom: 3rem;
   font-weight: bold; }
@@ -625,13 +645,16 @@ body, html {
 
 .battle {
   margin-top: 3rem;
-  padding: 15rem;
+  padding: 10rem 0 15rem 0;
   background-image: linear-gradient(to right, rgba(10, 191, 188, 0.8), rgba(252, 53, 76, 0.8)), url("../img/background/main2.jpg");
   background-size: cover;
   position: relative; }
 
 .card-gallery {
   background-color: #eeeeee;
-  padding: 15rem; }
+  padding: 10rem 0 15rem 0; }
   .card-gallery__card-list {
-    display: inline-block; }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto; }
