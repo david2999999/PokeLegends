@@ -528,6 +528,24 @@ body, html {
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #F9D423, #e65c00);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  .pokemon-card__mega-symbol {
+    position: absolute;
+    width: 5.5rem;
+    transition: all .3s;
+    opacity: 0; }
+    .pokemon-card__mega-symbol-red {
+      top: -12rem;
+      right: 0; }
+    .pokemon-card__mega-symbol-green {
+      top: 3.2rem;
+      left: 14rem; }
+    .pokemon-card__mega-symbol-blue {
+      top: -7rem;
+      right: 20rem; }
+  .pokemon-card:hover .pokemon-card__mega-symbol {
+    z-index: 10;
+    opacity: 1;
+    width: 5.5rem; }
 
 .header {
   background-image: linear-gradient(to bottom left, rgba(10, 191, 188, 0.85), rgba(252, 53, 76, 0.85)), url("../img/background/main.jpg");
