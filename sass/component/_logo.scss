@@ -5,4 +5,12 @@
   color: white;
   font-family: lobster, 'cursive';
   font-size: 4rem;
+
+  &__link{
+    color: $color-white;
+    
+    &:hover{
+      color: $color-white;
+    }
+  }
 }

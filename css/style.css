@@ -391,6 +391,10 @@ body, html {
   color: white;
   font-family: lobster, 'cursive';
   font-size: 4rem; }
+  .logo__link {
+    color: white; }
+    .logo__link:hover {
+      color: white; }
 
 .nav {
   list-style: none;
