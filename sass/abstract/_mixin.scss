@@ -49,6 +49,18 @@
   box-shadow: 0 1.5rem 4rem rgba($color-black, .25);
 }
 
+@mixin box-shadow-black{
+  -webkit-box-shadow: 10px 10px 20px -4px rgba(110,107,110,1);
+  -moz-box-shadow: 10px 10px 20px -4px rgba(110,107,110,1);
+  box-shadow: 10px 10px 20px -4px rgba(110,107,110,1);
+}
+@mixin box-shadow-black-2{
+  -webkit-box-shadow: 5px 5px 13px -4px rgba(110,107,110,1);
+  -moz-box-shadow: 5px 5px 13px -4px rgba(110,107,110,1);
+  box-shadow: 5px 5px 13px -4px rgba(110,107,110,1);
+}
+
+
 @mixin absCenter{
   position: absolute;
   top: 50%;

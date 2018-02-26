@@ -42,13 +42,13 @@
         </div>
     </header>
 
-    <section class="gallery">
+    <section class="gallery" id="gallery">
         <h1 class="heading_secondary">Select Your Starter</h1>
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
                 <div class="diamond-gallery-container">
                     <ul class="diamond-gallery">
-                        <li class="diamond-gallery__list diamond-gallery__list-1"><img class="diamond-gallery__img-1" src="img/gallery/1.png"></li>
+                        <a href="#bulbasaur"><li class="diamond-gallery__list diamond-gallery__list-1"><img class="diamond-gallery__img-1" src="img/gallery/1.png"></li></a>
                         <li class="diamond-gallery__list diamond-gallery__list-2"><img class="diamond-gallery__img-2" src="img/gallery/2.png"></li>
                         <li class="diamond-gallery__list diamond-gallery__list-3"><img class="diamond-gallery__img-3" src="img/gallery/3.png"></li>
                         <li class="diamond-gallery__list diamond-gallery__list-4"><img class="diamond-gallery__img-4" src="img/gallery/4.png"></li>
@@ -71,6 +71,51 @@
                         <li class="diamond-gallery__list diamond-gallery__list-21"><img class="diamond-gallery__img-21" src="img/gallery/21.png"></li>
                     </ul>
                 </div>
+            </div>
+        </div>
+
+        <div class="diamond-gallery__lightbox" id="bulbasaur">
+            <div class="diamond-gallery__lightbox__container">
+                    <img class="diamond-gallery__lightbox__img" src="img/gallery/1.png">
+
+                    <div class="diamond-gallery__lightbox__tab">
+                        <div class="diamond-gallery__lightbox__tab-1">
+                            <img class="diamond-gallery__lightbox__tab-img" src="img/gallery/pokeball.png" alt="pokeball">
+                            <div class="diamond-gallery__lightbox__tab-name">001 Bulbasaur</div>
+                        </div>
+                        <div class="diamond-gallery__lightbox__tab-2">
+                            <div class="diamond-gallery__lightbox__tab-desc">Seed Pok&eacute;mon</div>
+                        </div>
+                    </div>
+
+                    <div class="diamond-gallery__lightbox__type">
+                        <p class="diamond-gallery__lightbox__type-1 diamond-gallery__lightbox__type-green">
+                            Grass
+                        </p>
+                        <p class="diamond-gallery__lightbox__type-2 diamond-gallery__lightbox__type-purple">
+                            Poison
+                        </p>
+                    </div>
+
+                    <div class="diamond-gallery__lightbox__basic-info">
+                        <div class="diamond-gallery__lightbox__basic-info-1">
+                            <div class="diamond-gallery__lightbox__basic-info-height-desc">HT</div>
+                            <div class="diamond-gallery__lightbox__basic-info-height-value">2'04''</div>
+                        </div>
+                        <div class="diamond-gallery__lightbox__basic-info-1">
+                            <div class="diamond-gallery__lightbox__basic-info-weight-desc">WT</div>
+                            <div class="diamond-gallery__lightbox__basic-info-weight-value">15.2 lbs.</div>
+                        </div>
+                    </div>
+
+                    <p class="diamond-gallery__lightbox__desc">
+                        Bulbasaur (Japanese: フシギダネ Fushigidane) is a dual-type Grass/Poison Pokémon introduced in Generation I.
+                        It evolves into Ivysaur starting at level 16, which evolves into Venusaur starting at level 32.
+                        Along with Charmander and Squirtle, Bulbasaur is one of three starter Pokémon of Kanto available at the
+                        beginning of Pokémon Red, Green, Blue, FireRed, and LeafGreen.
+                    </p>
+
+                    <a href="#gallery"><div class="diamond-gallery__lightbox__exit">X</div></a>
             </div>
         </div>
 
@@ -109,7 +154,6 @@
             </div>
         </div>
     </section>
-
 
     <section class="card-gallery">
         <h1 class="heading_secondary-2">Featured Pokemon</h1>
