@@ -413,6 +413,21 @@ body, html {
       position: absolute;
       left: 10rem;
       top: 3rem; }
+      .diamond-gallery__lightbox__img-litten {
+        width: 40rem;
+        left: 15rem; }
+      .diamond-gallery__lightbox__img-charmander {
+        left: 20rem;
+        width: 40rem; }
+      .diamond-gallery__lightbox__img-tepig {
+        left: 20rem;
+        width: 42rem; }
+      .diamond-gallery__lightbox__img-torchic {
+        width: 46rem;
+        left: 17rem; }
+      .diamond-gallery__lightbox__img-chimchar {
+        width: 42rem;
+        left: 15rem; }
     .diamond-gallery__lightbox__tab {
       width: 45rem;
       position: absolute;
@@ -421,7 +436,8 @@ body, html {
       -webkit-box-shadow: 10px 10px 20px -4px #6e6b6e;
       -moz-box-shadow: 10px 10px 20px -4px #6e6b6e;
       box-shadow: 10px 10px 20px -4px #6e6b6e;
-      border-radius: 1rem; }
+      border-radius: 1rem;
+      color: #777; }
       .diamond-gallery__lightbox__tab-1 {
         height: 7rem;
         background: #00b09b;
@@ -433,6 +449,13 @@ body, html {
         border-top-left-radius: 1rem;
         border-top-right-radius: 1rem;
         position: relative; }
+        .diamond-gallery__lightbox__tab-1-fire {
+          background: #e52d27;
+          /* fallback for old browsers */
+          background: -webkit-linear-gradient(to bottom, #b31217, #e52d27);
+          /* Chrome 10-25, Safari 5.1-6 */
+          background: linear-gradient(to bottom, #b31217, #e52d27);
+          /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
       .diamond-gallery__lightbox__tab-2 {
         height: 5rem;
         background-color: #eeeeee;
@@ -502,6 +525,20 @@ body, html {
         /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to bottom left, #6A82FB, #FC5C7D);
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+      .diamond-gallery__lightbox__type-flying {
+        background: #525252;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #3d72b4, #525252);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #3d72b4, #525252);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+      .diamond-gallery__lightbox__type-fire {
+        background: #D31027;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #EA384D, #D31027);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #EA384D, #D31027);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
     .diamond-gallery__lightbox__basic-info {
       width: 30rem;
       background: #667db6;
@@ -535,7 +572,8 @@ body, html {
       bottom: 7rem;
       left: 15rem;
       border: 2px solid darkturquoise;
-      padding: 2rem; }
+      padding: 2rem;
+      color: #777; }
     .diamond-gallery__lightbox__exit {
       font-size: 3rem;
       position: absolute;

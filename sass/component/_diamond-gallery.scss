@@ -315,6 +315,31 @@
       position: absolute;
       left: 10rem;
       top: 3rem;
+
+      &-litten{
+        width: 40rem;
+        left: 15rem;
+      }
+
+      &-charmander{
+        left: 20rem;
+        width: 40rem;
+      }
+
+      &-tepig{
+        left: 20rem;
+        width: 42rem;
+      }
+
+      &-torchic{
+        width: 46rem;
+        left: 17rem;
+      }
+
+      &-chimchar{
+        width: 42rem;
+        left: 15rem;
+      }
     }
 
     &__tab{
@@ -324,6 +349,7 @@
       right: 15rem;
       @include box-shadow-black;
       border-radius: 1rem;
+      color: $color-grey-dark;
 
       &-1{
         height: 7rem;
@@ -334,6 +360,12 @@
         border-top-left-radius: 1rem;
         border-top-right-radius: 1rem;
         position: relative;
+
+        &-fire{
+          @include fire2;
+        }
+
+
       }
 
       &-2{
@@ -349,6 +381,7 @@
         width: 4.5rem;
         top: 1rem;
         left: 4rem;
+
       }
 
       &-name{
@@ -414,6 +447,16 @@
         background: -webkit-linear-gradient(to bottom left, #6A82FB, #FC5C7D);  /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to bottom left, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
       }
+
+      &-flying{
+        background: #525252;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #3d72b4, #525252);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #3d72b4, #525252); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      }
+
+      &-fire{
+        @include fire;
+      }
     }
 
     &__basic-info{
@@ -450,6 +493,7 @@
       left: 15rem;
       border: 2px solid darkturquoise;
       padding: 2rem;
+      color: $color-grey-dark;
     }
 
     &__exit{
