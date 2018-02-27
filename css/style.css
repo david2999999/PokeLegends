@@ -382,11 +382,17 @@ body, html {
       background-size: cover;
       width: 24rem;
       transform: rotate(-45deg);
-      margin-top: -5rem; }
+      margin-top: -.5rem;
+      margin-left: -4rem; }
   .diamond-gallery__lightbox {
     position: fixed;
     opacity: 0;
-    background-color: rgba(0, 0, 0, 0.9);
+    background: #43cea2;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top right, #185a9d, #43cea2);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top right, #185a9d, #43cea2);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     z-index: 999;
     top: 0;
     left: 0;
@@ -407,16 +413,19 @@ body, html {
       transform: translate(-50%, -50%);
       height: 70rem;
       background-color: white;
-      border-radius: 10px; }
+      border-radius: 10px;
+      -webkit-box-shadow: 10px 10px 20px -4px #6e6b6e;
+      -moz-box-shadow: 10px 10px 20px -4px #6e6b6e;
+      box-shadow: 10px 10px 20px -4px #6e6b6e; }
     .diamond-gallery__lightbox__img {
       width: 45rem;
       position: absolute;
       left: 10rem;
       top: 3rem; }
-      .diamond-gallery__lightbox__img-litten {
+      .diamond-gallery__lightbox__img-litten, .diamond-gallery__lightbox__img-fenneken {
         width: 40rem;
         left: 15rem; }
-      .diamond-gallery__lightbox__img-charmander {
+      .diamond-gallery__lightbox__img-charmander, .diamond-gallery__lightbox__img-chespin, .diamond-gallery__lightbox__img-mudkip {
         left: 20rem;
         width: 40rem; }
       .diamond-gallery__lightbox__img-tepig {
@@ -428,6 +437,22 @@ body, html {
       .diamond-gallery__lightbox__img-chimchar {
         width: 42rem;
         left: 15rem; }
+      .diamond-gallery__lightbox__img-chikorita, .diamond-gallery__lightbox__img-treeko {
+        width: 45rem;
+        left: 20rem; }
+      .diamond-gallery__lightbox__img-snivy, .diamond-gallery__lightbox__img-squirtle, .diamond-gallery__lightbox__img-totodile {
+        width: 37rem;
+        left: 20rem;
+        top: 7rem; }
+      .diamond-gallery__lightbox__img-cyndaquil, .diamond-gallery__lightbox__img-oshawott {
+        width: 50rem;
+        left: 13rem; }
+      .diamond-gallery__lightbox__img-froakie, .diamond-gallery__lightbox__img-piplup {
+        width: 33rem;
+        left: 21rem;
+        top: 5rem; }
+      .diamond-gallery__lightbox__img-oshawott {
+        top: 8rem; }
     .diamond-gallery__lightbox__tab {
       width: 45rem;
       position: absolute;
@@ -455,6 +480,13 @@ body, html {
           background: -webkit-linear-gradient(to bottom, #b31217, #e52d27);
           /* Chrome 10-25, Safari 5.1-6 */
           background: linear-gradient(to bottom, #b31217, #e52d27);
+          /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+        .diamond-gallery__lightbox__tab-1-water {
+          background: #24C6DC;
+          /* fallback for old browsers */
+          background: -webkit-linear-gradient(to left, #514A9D, #24C6DC);
+          /* Chrome 10-25, Safari 5.1-6 */
+          background: linear-gradient(to left, #514A9D, #24C6DC);
           /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
       .diamond-gallery__lightbox__tab-2 {
         height: 5rem;
@@ -539,6 +571,13 @@ body, html {
         /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to right, #EA384D, #D31027);
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+      .diamond-gallery__lightbox__type-water {
+        background: #00c6ff;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #0072ff, #00c6ff);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #0072ff, #00c6ff);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
     .diamond-gallery__lightbox__basic-info {
       width: 30rem;
       background: #667db6;
@@ -569,7 +608,7 @@ body, html {
       width: 100rem;
       margin: 0 auto;
       position: absolute;
-      bottom: 7rem;
+      bottom: 5rem;
       left: 15rem;
       border: 2px solid darkturquoise;
       padding: 2rem;
@@ -580,9 +619,11 @@ body, html {
       top: 2rem;
       right: 4rem;
       font-weight: bold;
-      color: #FC354C; }
+      color: #FC354C;
+      transition: all .2s;
+      backface-visibility: hidden; }
       .diamond-gallery__lightbox__exit:hover {
-        transform: scale(1.1); }
+        transform: scale(1.2); }
 
 .logo {
   position: absolute;

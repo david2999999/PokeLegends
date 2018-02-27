@@ -49,17 +49,14 @@
       top:  0;
       left: 48%;
     }
-
     &-6{
       bottom: 0;
       left: 60%;
     }
-
     &-7{
       top:  0;
       left: 72%;
     }
-
     &-8{
       bottom: 0;
       left: 84%;
@@ -68,12 +65,10 @@
       top:  0;
       left: 96%;
     }
-
     &-10{
       bottom: 162%;
       left: 84%;
     }
-
     &-11{
       bottom: 162%;
       left: 60%;
@@ -163,8 +158,6 @@
       margin-top: 1.2rem;
       margin-left: 2rem;
     }
-
-
     &-6{
       background-size: cover;
       width: 21rem;
@@ -172,14 +165,12 @@
       margin-top: -4rem;
       margin-left: -2rem;
     }
-
     &-7{
       background-size: cover;
       width: 20rem;
       transform: rotate(-45deg);
       margin-top: -3rem;
     }
-
     &-8{
       background-size: cover;
       width: 16rem;
@@ -187,7 +178,6 @@
       margin-top: -1.2rem;
       margin-left: 2rem;
     }
-
     &-9{
       background-size: cover;
       width: 22rem;
@@ -195,9 +185,6 @@
       margin-top: -1rem;
       margin-left: -5rem;
     }
-
-
-
     &-10{
       background-size: cover;
       width: 27rem;
@@ -205,7 +192,6 @@
       margin-top: -3rem;
       margin-left: -2rem;
     }
-
     &-11{
       background-size: cover;
       width: 20rem;
@@ -277,7 +263,8 @@
       background-size: cover;
       width: 24rem;
       transform: rotate(-45deg);
-      margin-top: -5rem;
+      margin-top: -.5rem;
+      margin-left: -4rem;
     }
 
   }
@@ -285,7 +272,11 @@
   &__lightbox{
     position: fixed;
     opacity: 0;
-    background-color: rgba(black, .9);
+
+    background: #43cea2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top right, #185a9d, #43cea2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top right, #185a9d, #43cea2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     z-index: 999;
     top: 0;
     left:0;
@@ -308,6 +299,8 @@
       height: 70rem;
       background-color: white;
       border-radius: 10px;
+      @include box-shadow-black;
+
     }
 
     &__img{
@@ -316,12 +309,12 @@
       left: 10rem;
       top: 3rem;
 
-      &-litten{
+      &-litten, &-fenneken{
         width: 40rem;
         left: 15rem;
       }
 
-      &-charmander{
+      &-charmander, &-chespin, &-mudkip{
         left: 20rem;
         width: 40rem;
       }
@@ -339,6 +332,33 @@
       &-chimchar{
         width: 42rem;
         left: 15rem;
+      }
+
+      &-chikorita, &-treeko{
+        width: 45rem;
+        left: 20rem;
+      }
+
+      &-snivy, &-squirtle, &-totodile{
+        width: 37rem;
+        left: 20rem;
+        top: 7rem;
+      }
+
+      &-cyndaquil,&-oshawott{
+        width:50rem;
+        left: 13rem;
+      }
+
+      &-froakie, &-piplup{
+        width: 33rem;
+        left: 21rem;
+        top: 5rem;
+      }
+
+      &-oshawott{
+
+        top: 8rem;
       }
     }
 
@@ -363,6 +383,10 @@
 
         &-fire{
           @include fire2;
+        }
+
+        &-water{
+          @include water2;
         }
 
 
@@ -457,6 +481,10 @@
       &-fire{
         @include fire;
       }
+
+      &-water{
+        @include water;
+      }
     }
 
     &__basic-info{
@@ -489,7 +517,7 @@
       width: 100rem;
       margin: 0 auto;
       position: absolute;
-      bottom: 7rem;
+      bottom: 5rem;
       left: 15rem;
       border: 2px solid darkturquoise;
       padding: 2rem;
@@ -503,10 +531,11 @@
       right: 4rem;
       font-weight: bold;
       color: $color-primary-dark;
-      //transition: all .3s;
+      transition: all .2s;
+      backface-visibility: hidden;
 
       &:hover{
-        transform: scale(1.1);
+        transform: scale(1.2);
       }
     }
   }
