@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: Poke-Legend
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: david2999999
+Implementation-Vendor-Id: com.poke
+Build-Jdk: 1.8.0_161
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/pokemon-app
+Created-By: Maven Integration for Eclipse
+
