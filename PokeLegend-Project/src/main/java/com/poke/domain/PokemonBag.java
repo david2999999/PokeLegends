@@ -7,6 +7,7 @@ import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
 
+
 import lombok.Data;
 
 @Entity
@@ -55,6 +56,11 @@ public class PokemonBag {
 	// checks if the pokemon is inside the bag
 	public boolean inTheBag(Pokemon searchPokemon) {
 		return pokemons.contains(searchPokemon);
+	}
+	
+	// checks if the bag is full
+	public boolean bagFull() {
+		return pokemons.size() == 6;
 	}
 
 

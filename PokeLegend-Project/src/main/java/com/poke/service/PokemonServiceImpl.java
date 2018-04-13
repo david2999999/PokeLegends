@@ -8,7 +8,6 @@ public class PokemonServiceImpl implements PokemonService{
 
 	@Override
 	public Set<Pokemon> getPokemons() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
