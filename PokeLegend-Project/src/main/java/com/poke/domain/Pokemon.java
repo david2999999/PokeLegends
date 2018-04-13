@@ -28,7 +28,7 @@ public class Pokemon {
 	private Long id;
 	
 	@OneToOne
-	private PokemonName name;
+	private PokemonName pokemonName;
 	
 	private String nickName;
 	
@@ -53,10 +53,10 @@ public class Pokemon {
 	private Stat currentStats;
 	
 	@OneToOne
-	private final Stat baseStats;
+	private Stat baseStats;
 	
 	@OneToOne
-	private final Stat maxStats;
+	private Stat maxStats;
 	
 	@OneToOne
 	private Multiplier multiplier;

@@ -6,10 +6,16 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Data
+@NoArgsConstructor
 public class PokemonName {
+
+	public PokemonName(String name) {
+		this.name = name;
+	}
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)

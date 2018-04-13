@@ -1,5 +1,6 @@
 package com.poke.domain;
 
+import java.util.HashSet;
 import java.util.Set;
 
 import javax.persistence.CascadeType;
@@ -15,20 +16,22 @@ public class PokemonBag {
 	@OneToMany(mappedBy="pokemonBag", cascade=CascadeType.PERSIST)
 	private Set<Pokemon> pokemons;
 	
+	public PokemonBag() {
+		this.pokemons = new HashSet<>();
+	}
+	
 	// retrieve a pokemon from the bag by its name
 	// search through the list of pokemons 
 	// if the names match, return the pokemon
-	public Pokemon getPokemonByName(Pokemon searchPokemon) {
-		
-		if(inTheBag(searchPokemon)) {
-			for(Pokemon pokemon : pokemons) {
-				if (pokemon.getName() == searchPokemon.getName()) {
-					return pokemon;
-				}
+	public Pokemon getPokemonByName(String searchPokemon) {
+
+		for (Pokemon pokemon : pokemons) {
+			if (pokemon.getPokemonName().getName().equals(searchPokemon)) {
+				return pokemon;
 			}
 		}
-		
-		System.out.println(searchPokemon.getName() + " is not in the bag");
+
+		System.out.println(searchPokemon + " is not in the bag");
 		return null;
 	}
 	
@@ -53,5 +56,7 @@ public class PokemonBag {
 	public boolean inTheBag(Pokemon searchPokemon) {
 		return pokemons.contains(searchPokemon);
 	}
+
+
 	
 }
