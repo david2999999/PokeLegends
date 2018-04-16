@@ -1,4 +1,4 @@
-package com.poke.domain.pokedetail;
+package com.poke.domain.item;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,21 +9,21 @@ import lombok.Data;
 
 @Entity
 @Data
-public class Stat {
+public class Medicine {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private Long id;
+	private long id;
 	
-	private Integer hp;
+	private String name;
 	
-	private Integer atk;
+	private String description;
 	
-	private Integer spAtk;
+	private Integer price;
 	
-	private Integer defense;
+	private Integer sellPrice;
 	
-	private Integer spDefense;
+	private Integer amount;
 	
-	private Integer speed;
+	private String location;
 }

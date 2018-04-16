@@ -15,15 +15,15 @@ public class Multiplier {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private long id;
 	
-	private int atkMultiplier;
+	private Integer atkMultiplier;
 	 
-	private int spAtkMultiplier;
+	private Integer spAtkMultiplier;
 	 
-	private int defenseMultiplier;
+	private Integer defenseMultiplier;
 	 
-	private int spDefenseMultiplier;
+	private Integer spDefenseMultiplier;
 	 
-	private int speedMultiplier;
+	private Integer speedMultiplier;
 	 	
 	public void resetMultipliers() {
 		setAtkMultiplier(1);

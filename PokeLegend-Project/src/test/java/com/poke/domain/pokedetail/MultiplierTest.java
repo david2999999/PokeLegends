@@ -18,11 +18,11 @@ public class MultiplierTest {
 	public void testResetMultipliers() throws Exception{
 		multiplier.resetMultipliers();
 		
-		assertEquals(1, multiplier.getAtkMultiplier());
-		assertEquals(1, multiplier.getDefenseMultiplier());
-		assertEquals(1, multiplier.getSpAtkMultiplier());
-		assertEquals(1, multiplier.getSpDefenseMultiplier());
-		assertEquals(1, multiplier.getSpeedMultiplier());
+		assertEquals((Integer)1, multiplier.getAtkMultiplier());
+		assertEquals((Integer)1, multiplier.getDefenseMultiplier());
+		assertEquals((Integer)1, multiplier.getSpAtkMultiplier());
+		assertEquals((Integer)1, multiplier.getSpDefenseMultiplier());
+		assertEquals((Integer)1, multiplier.getSpeedMultiplier());
 	}
 
 }

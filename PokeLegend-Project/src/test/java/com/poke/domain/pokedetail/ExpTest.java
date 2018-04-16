@@ -24,7 +24,7 @@ public class ExpTest {
 	
 	@Test 
 	public void testExp() {
-		int expTest = 4;
+		Integer expTest = 4;
 		
 		exp.setCurrentExp(expTest);
 		

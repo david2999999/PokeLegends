@@ -12,7 +12,7 @@ import javax.persistence.OneToOne;
 
 import com.poke.domain.Pokemon;
 import com.poke.domain.PokemonBag;
-import com.poke.domain.item.ItemBag;
+import com.poke.domain.bag.Bag;
 
 import lombok.Data;
 
@@ -33,7 +33,7 @@ public class PokemonPlayer {
 	private PokemonBag pokemonBag;
 	
 	@OneToOne
-	private ItemBag itemBag;
+	private Bag itemBag;
 	
 	private Integer pokeCoin;
 	

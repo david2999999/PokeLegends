@@ -1,4 +1,4 @@
-package com.poke.domain.pokedetail;
+package com.poke.domain.bag;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,21 +9,9 @@ import lombok.Data;
 
 @Entity
 @Data
-public class Stat {
-
+public class BattleItemBag {
+	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private Long id;
-	
-	private Integer hp;
-	
-	private Integer atk;
-	
-	private Integer spAtk;
-	
-	private Integer defense;
-	
-	private Integer spDefense;
-	
-	private Integer speed;
+	private long id;
 }
