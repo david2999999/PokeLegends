@@ -4,6 +4,9 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+
+import com.poke.domain.bag.PokeballBag;
 
 import lombok.Data;
 
@@ -29,6 +32,8 @@ public class PokeBall {
 	
 	private Integer amount;
 	
+	@ManyToOne
+	private PokeballBag pokeballBag;
 }
 
 

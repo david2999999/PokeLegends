@@ -6,6 +6,9 @@ import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+
+import com.poke.domain.bag.ItemBag;
 
 import lombok.Data;
 
@@ -26,4 +29,6 @@ public class Item {
 	
 	private Integer amount;
 	
+	@ManyToOne
+	private ItemBag itemBag;
 }

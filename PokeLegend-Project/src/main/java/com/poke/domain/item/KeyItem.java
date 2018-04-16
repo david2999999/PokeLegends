@@ -6,6 +6,9 @@ import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+
+import com.poke.domain.bag.KeyItemBag;
 
 import lombok.Data;
 
@@ -25,4 +28,7 @@ public class KeyItem {
 	
 	@Enumerated(value = EnumType.STRING)
 	private Category category;
+	
+	@ManyToOne
+	private KeyItemBag keyItemBag;
 }

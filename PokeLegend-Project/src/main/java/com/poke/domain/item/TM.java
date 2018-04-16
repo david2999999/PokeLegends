@@ -6,7 +6,9 @@ import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
+import com.poke.domain.bag.TmBag;
 import com.poke.domain.pokedetail.Type;
 
 import lombok.Data;
@@ -34,6 +36,9 @@ public class TM {
 	private Integer power;
 	
 	private Integer accuracy;
+	
+	@ManyToOne
+	private TmBag tmBag;
 	
 }
 

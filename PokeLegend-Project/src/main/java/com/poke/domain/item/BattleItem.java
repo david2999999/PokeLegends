@@ -6,6 +6,9 @@ import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+
+import com.poke.domain.bag.BattleItemBag;
 
 import lombok.Data;
 
@@ -31,6 +34,9 @@ public class BattleItem {
 	
 	@Enumerated(value = EnumType.STRING)
 	private Category category;
+	
+	@ManyToOne
+	private BattleItemBag battleItemBag;
 }
 
 

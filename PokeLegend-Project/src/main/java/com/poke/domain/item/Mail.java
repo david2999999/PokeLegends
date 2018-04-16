@@ -6,6 +6,9 @@ import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+
+import com.poke.domain.bag.MailBag;
 
 import lombok.Data;
 
@@ -30,6 +33,8 @@ public class Mail {
 	
 	private Integer amount;
 	
+	@ManyToOne
+	private MailBag mailBag;
 }
 
 

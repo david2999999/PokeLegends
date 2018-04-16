@@ -4,6 +4,9 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+
+import com.poke.domain.bag.MedicineBag;
 
 import lombok.Data;
 
@@ -26,4 +29,7 @@ public class Medicine {
 	private Integer amount;
 	
 	private String location;
+	
+	@ManyToOne
+	private MedicineBag medicineBag;
 }
