@@ -63,6 +63,15 @@ public class Pokemon {
 	
 	@ManyToOne
 	private PokemonBag pokemonBag;
+
+	@ManyToOne
+	private PokemonBox pokemonBox;
+	
+	public static boolean fainted(Pokemon pokemon) {
+		return pokemon.getCurrentStats().getHp() == 0 ? true : false;
+	}
+	
+	
 }
 
 

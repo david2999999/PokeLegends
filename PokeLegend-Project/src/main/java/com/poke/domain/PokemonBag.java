@@ -1,10 +1,17 @@
 package com.poke.domain;
 
-import java.util.HashSet;
-import java.util.Set;
+import static org.mockito.Mockito.RETURNS_DEEP_STUBS;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
 
@@ -14,11 +21,15 @@ import lombok.Data;
 @Data
 public class PokemonBag {
 	
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private long id;
+	
 	@OneToMany(mappedBy="pokemonBag", cascade=CascadeType.PERSIST)
-	private Set<Pokemon> pokemons;
+	private List<Pokemon> pokemons;
 	
 	public PokemonBag() {
-		this.pokemons = new HashSet<>();
+		this.pokemons = new ArrayList<>();
 	}
 	
 	// retrieve a pokemon from the bag by its name
@@ -45,6 +56,35 @@ public class PokemonBag {
 		}else {
 			System.out.println("Your Bag is Full!");
 			return false;
+		}
+	}
+	
+	public boolean switchPokemon(int decision) {
+		
+		if(decision < 0 || decision > 5) {
+			System.out.println("There are only 6 pokemons. options (1 - 5)");
+			return false;
+			
+		}else if(decision == 0) {
+			Pokemon pokemonPicked = getPokemons().get(decision);
+			
+			if (pokemonPicked.getCurrentStats().getHp() == 0) {
+				System.out.println(pokemonPicked.getPokemonName() + " is unable to battle.");
+				return false;
+			}else {
+				System.out.println(pokemonPicked.getPokemonName() + " is already in battle");
+				return false;
+			}
+		}else {
+			Pokemon pokemonPicked = getPokemons().get(decision);
+			
+			if (pokemonPicked.getCurrentStats().getHp() == 0) {
+				System.out.println(pokemonPicked.getPokemonName() + " is unable to battle.");
+				return false;
+			}else {
+				Collections.swap(getPokemons(), 0, decision);
+				return true;
+			}
 		}
 	}
 	
