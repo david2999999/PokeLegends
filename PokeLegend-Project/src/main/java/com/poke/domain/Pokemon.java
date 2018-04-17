@@ -41,7 +41,7 @@ public class Pokemon {
 	@OneToOne
 	private Exp exp;
 	
-	private int level;
+	private Integer level;
 	
 	@Enumerated(value = EnumType.STRING)
 	private Type type;
