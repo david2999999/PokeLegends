@@ -1,5 +1,6 @@
 package com.poke.domain;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
@@ -18,16 +19,18 @@ import com.poke.domain.pokedetail.Stat;
 import com.poke.domain.pokedetail.Type;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 @Data
 @Entity
+@EqualsAndHashCode(exclude = {"pokemonBox", "pokemonBag"})
 public class Pokemon {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
 	
-	@OneToOne
+	@OneToOne(cascade=CascadeType.ALL)
 	private PokemonName pokemonName;
 	
 	private String nickName;
@@ -38,7 +41,7 @@ public class Pokemon {
 	@Enumerated(value = EnumType.STRING)
 	private Nature nature;
 	
-	@OneToOne
+	@OneToOne(cascade=CascadeType.ALL)
 	private Exp exp;
 	
 	private Integer level;
@@ -49,22 +52,22 @@ public class Pokemon {
 	@Enumerated(value = EnumType.STRING)
 	private Type type2;
 	
-	@OneToOne
+	@OneToOne(cascade=CascadeType.ALL)
 	private Stat currentStats;
 	
-	@OneToOne
+	@OneToOne(cascade=CascadeType.ALL)
 	private Stat baseStats;
 	
-	@OneToOne
+	@OneToOne(cascade=CascadeType.ALL)
 	private Stat maxStats;
 	
-	@OneToOne
+	@OneToOne(cascade=CascadeType.ALL)
 	private Multiplier multiplier;
 	
-	@ManyToOne
+	@ManyToOne(cascade=CascadeType.PERSIST)
 	private PokemonBag pokemonBag;
-
-	@ManyToOne
+	
+	@ManyToOne(cascade=CascadeType.PERSIST)
 	private PokemonBox pokemonBox;
 	
 	public static boolean fainted(Pokemon pokemon) {

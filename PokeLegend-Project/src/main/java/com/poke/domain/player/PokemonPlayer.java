@@ -64,9 +64,9 @@ public class PokemonPlayer {
 		}
 	}
 	
-	public boolean switchPokemon(int decision) {
-		return getPokemonBag().switchPokemon(decision);
-	}
+//	public boolean switchPokemon(int decision) {
+//		return getPokemonBag().switchPokemon(decision);
+//	}
 }
 
 

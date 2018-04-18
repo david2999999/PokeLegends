@@ -7,11 +7,13 @@ import java.util.Optional;
 import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.poke.domain.player.PokemonPlayer;
 import com.poke.exceptions.NotFoundException;
 import com.poke.repository.PokemonPlayerRepository;
 
+@Service
 public class PokemonPlayerServiceImpl implements PokemonPlayerService{
 
 	private final PokemonPlayerRepository pokemonPlayerRepository;

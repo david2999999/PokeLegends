@@ -2,7 +2,8 @@ package com.poke.domain;
 
 import static org.junit.Assert.*;
 
-import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -29,7 +30,7 @@ public class PokemonBagTest {
 	@Test
 	public void getPokemonByNameTest() {
 		String name = "Pikachu";
-		ArrayList<Pokemon> pokemons = new ArrayList<>();
+		Set<Pokemon> pokemons = new HashSet<Pokemon>();
 		
 		Pokemon pokemon = new Pokemon();
 		PokemonName pokemonName = new PokemonName(name);

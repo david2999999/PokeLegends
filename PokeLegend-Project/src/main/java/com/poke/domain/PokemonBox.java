@@ -1,8 +1,9 @@
 package com.poke.domain;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -11,9 +12,11 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 @Data
 @Entity
+@EqualsAndHashCode(exclude = {"pokemonPC"})
 public class PokemonBox {
 
 	@Id
@@ -23,8 +26,14 @@ public class PokemonBox {
 	@ManyToOne
 	private PokemonPc pokemonPC;
 	
-	@OneToMany(mappedBy="pokemonBox")
-	private List<Pokemon> pokemons = new ArrayList<>();
+	@OneToMany(mappedBy="pokemonBox", cascade=CascadeType.ALL)
+	private Set<Pokemon> pokemons = new HashSet<>();
+	
+	public void addPokemon(Pokemon pokemon) {
+		pokemons.add(pokemon);
+		pokemon.setPokemonBox(this);
+	}
+	
 	
 	// checks if the box is full
 	// maximum number of pokemon in the box will be 30
@@ -64,16 +73,16 @@ public class PokemonBox {
 	}
 	
 	// release or remove the pokemon from the box
-	public boolean releasePokemon(String pokemonName) {
-		for(Pokemon pokemon: pokemons) {
-			if (pokemon.getPokemonName().getName().equals(pokemonName)) {
-				pokemons.remove(pokemons.indexOf(pokemon));
-				return true;
-			}
-		}
-		
-		return false;
-	}
+//	public boolean releasePokemon(String pokemonName) {
+//		for(Pokemon pokemon: pokemons) {
+//			if (pokemon.getPokemonName().getName().equals(pokemonName)) {
+//				pokemons.remove(pokemons.indexOf(pokemon));
+//				return true;
+//			}
+//		}
+//		
+//		return false;
+//	}
 
 }
 
