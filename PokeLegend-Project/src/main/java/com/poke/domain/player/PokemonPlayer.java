@@ -37,6 +37,7 @@ public class PokemonPlayer {
 	
 	private Integer pokeCoin;
 	
+	
 	public boolean blackOut() {
 		int pokemonFainted = 0;
 		

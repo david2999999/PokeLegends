@@ -1,6 +1,7 @@
 package com.poke.domain.bag;
 
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
@@ -12,9 +13,11 @@ import javax.persistence.OneToMany;
 import com.poke.domain.item.BattleItem;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 @Entity
 @Data
+@EqualsAndHashCode(exclude = {"battleItems"})
 public class BattleItemBag {
 	
 	@Id
@@ -22,7 +25,7 @@ public class BattleItemBag {
 	private long id;
 	
 	@OneToMany(mappedBy="battleItemBag", cascade=CascadeType.ALL)
-	private List<BattleItem> battleItems;
+	private Set<BattleItem> battleItems = new HashSet<>();
 }
 
 

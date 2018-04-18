@@ -9,9 +9,11 @@ import javax.persistence.ManyToOne;
 import com.poke.domain.bag.MedicineBag;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 @Entity
 @Data
+@EqualsAndHashCode(exclude = {"medicineBag"})
 public class Medicine {
 
 	@Id

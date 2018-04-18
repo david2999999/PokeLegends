@@ -11,9 +11,11 @@ import javax.persistence.ManyToOne;
 import com.poke.domain.bag.BattleItemBag;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 @Entity
 @Data
+@EqualsAndHashCode(exclude = {"battleItemBag"})
 public class BattleItem {
 
 	@Id

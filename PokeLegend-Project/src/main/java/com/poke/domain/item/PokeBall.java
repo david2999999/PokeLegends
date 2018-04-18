@@ -9,9 +9,11 @@ import javax.persistence.ManyToOne;
 import com.poke.domain.bag.PokeballBag;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 @Entity
 @Data
+@EqualsAndHashCode(exclude = {"pokeballBag"})
 public class PokeBall {
 
 	@Id

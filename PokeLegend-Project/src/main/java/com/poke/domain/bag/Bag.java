@@ -1,5 +1,6 @@
 package com.poke.domain.bag;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -16,28 +17,28 @@ public class Bag {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private long id;
 	
-	@OneToOne
+	@OneToOne(cascade=CascadeType.ALL)
 	private BattleItemBag battleItemBag;
 	
-	@OneToOne
+	@OneToOne(cascade=CascadeType.ALL)
 	private BerryBag berryBag;
 	
-	@OneToOne
+	@OneToOne(cascade=CascadeType.ALL)
 	private ItemBag itemBag;
 	
-	@OneToOne
+	@OneToOne(cascade=CascadeType.ALL)
 	private KeyItemBag keyItemBag;
 	
-	@OneToOne
+	@OneToOne(cascade=CascadeType.ALL)
 	private MailBag mailBag;
 	
-	@OneToOne
+	@OneToOne(cascade=CascadeType.ALL)
 	private MedicineBag medicineBag;
 	
-	@OneToOne
+	@OneToOne(cascade=CascadeType.ALL)
 	private PokeballBag pokeballBag;
 	
-	@OneToOne
+	@OneToOne(cascade=CascadeType.ALL)
 	private TmBag tmBag;
 }
 

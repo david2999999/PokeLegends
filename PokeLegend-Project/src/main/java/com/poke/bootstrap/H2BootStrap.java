@@ -95,9 +95,64 @@ public class H2BootStrap implements ApplicationListener<ContextRefreshedEvent>{
 		PokemonPc pokemonPc = new PokemonPc();
 		PokemonBox pokemonBox = new PokemonBox();
 		pokemonBox.addPokemon(pokemon);
-		pokemonPc.addBox(pokemonBox);;
+		pokemonPc.addBox(pokemonBox);
 				
 		pokemonPcRepository.save(pokemonPc);
+		
+		// another pokemon
+		Pokemon pokemon2 = new Pokemon();
+		
+		PokemonName pokemonName2 = new PokemonName();
+		pokemonName2.setName("Entei");
+		pokemon2.setPokemonName(pokemonName2);
+		
+		pokemon2.setNickName("Entei");
+		pokemon2.setGender(Gender.Genderless);
+		pokemon2.setNature(Nature.Brave);
+		
+		Exp exp2 = new Exp();
+		exp2.setCurrentExp(81);
+		pokemon2.setExp(exp2);
+		
+		pokemon2.setLevel(50);
+		
+		pokemon2.setType(Type.Fire);
+		
+		Stat stat3 = new Stat();
+		stat3.setHp(340);
+		stat3.setAtk(211);
+		stat3.setDefense(157);
+		stat3.setSpAtk(166);
+		stat3.setSpDefense(139);
+		stat3.setSpeed(184);
+		pokemon2.setCurrentStats(stat3);
+		pokemon2.setMaxStats(stat3);
+		
+		Stat stat4 = new Stat();
+		stat4.setHp(115);
+		stat4.setAtk(115);
+		stat4.setDefense(85);
+		stat4.setSpAtk(90);
+		stat4.setSpDefense(75);
+		stat4.setSpeed(100);
+		pokemon2.setBaseStats(stat4);
+
+		Multiplier multiplier2 = new Multiplier();
+		multiplier2.resetMultipliers();
+		pokemon2.setMultiplier(multiplier2);
+		
+		PokemonBag pokemonBag2 = new PokemonBag();
+		pokemonBag2.addPokemonToBag(pokemon2);
+		
+		PokemonPc pokemonPc2 = new PokemonPc();
+		PokemonBox pokemonBox2 = new PokemonBox();
+		pokemonBox2.addPokemon(pokemon2);
+		pokemonPc2.addBox(pokemonBox2);
+				
+		pokemonPcRepository.save(pokemonPc2);
+		
+		
+		
 		
 		pokemons.add(pokemon);
 		

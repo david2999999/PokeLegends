@@ -12,9 +12,11 @@ import com.poke.domain.bag.TmBag;
 import com.poke.domain.pokedetail.Type;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 @Entity
 @Data
+@EqualsAndHashCode(exclude = {"tmBag"})
 public class TM {
 
 	@Id

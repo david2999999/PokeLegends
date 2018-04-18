@@ -1,6 +1,7 @@
 package com.poke.domain.bag;
 
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
@@ -12,9 +13,11 @@ import javax.persistence.OneToMany;
 import com.poke.domain.item.Medicine;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 @Entity
 @Data
+@EqualsAndHashCode(exclude = {"medicines"})
 public class MedicineBag {
 
 	@Id
@@ -22,5 +25,5 @@ public class MedicineBag {
 	private long id;
 	
 	@OneToMany(mappedBy="medicineBag", cascade=CascadeType.ALL)
-	private List<Medicine> medicines;
+	private Set<Medicine> medicines = new HashSet<>();
 }
