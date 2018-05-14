@@ -7,22 +7,41 @@
   right: 5rem;
   font-weight: 700;
 
+  @include respond(phone) {
+    right: 2rem;
+    top: 6rem;
+  }
 
   &__list{
     display: inline-block;
+    transition: all .3s;
+    text-decoration: none;
+
+    &:hover{
+      color: white;
+      transform: translateY(-2px);
+    }
 
     &:not(:last-child){
       padding-right: 3rem;
+
+      @include respond(phone) {
+        padding-right: 1rem;
+      }
+    }
+
+    &__battle{
+      @include respond(phone) {
+        display: none;
+      }
     }
   }
 
   &__link{
     color: $color-white;
-    transition: all .3s;
 
     &:hover{
-      color: $color-primary;
-      transform: translateY(-2px);
+      color: white;
     }
   }
 
