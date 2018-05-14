@@ -40,21 +40,21 @@ body, html {
   background-color: $color-grey-light;
   width: 100%;
 
-  //@include respond(big-desktop){
-  //  font-size: 62.5%;
-  //}
-  //
-  //@include respond(tab-land){
-  //  font-size: 56.25%;
-  //}
-  //
-  //@include respond(tab-port) {
-  //  font-size: 50%;
-  //}
-  //
-  //@include respond(phone) {
-  //  font-size: 45%;
-  //}
+  @include respond(big-desktop){
+    font-size: 62.5%;
+  }
+
+  @include respond(tab-land){
+    font-size: 56.25%;
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%;
+  }
+
+  @include respond(phone) {
+    font-size: 45%;
+  }
 
 
 }

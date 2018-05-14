@@ -26,6 +26,18 @@ body, html {
   overflow-x: hidden;
   background-color: #eeeeee;
   width: 100%; }
+  @media only screen and (min-width: 112.5em) {
+    body, html {
+      font-size: 62.5%; } }
+  @media only screen and (max-width: 75em) {
+    body, html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 62.5em) {
+    body, html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 37.5em) {
+    body, html {
+      font-size: 45%; } }
 
 ::selection {
   background-color: #0ABFBC;
@@ -816,39 +828,29 @@ body, html {
     transform: translate(-50%, -50%);
     text-align: center; }
 
-.footer__layer1 {
-  background: #8E0E00;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom left, #1F1C18, #8E0E00);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom left, #1F1C18, #8E0E00);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  width: 100%;
-  height: 100%;
-  padding: 7rem 0 7rem 0; }
-
 .footer__layer2 {
-  background-color: #260000;
+  background-color: #0d152d;
   width: 100%;
   height: 100%;
   padding: 1rem; }
 
 .footer__logo {
-  font-size: 6rem;
+  font-size: 5rem;
   font-family: lobster, 'cursive';
   text-align: center;
   padding-bottom: 3rem;
   transition: all .3s; }
   .footer__logo-link {
-    color: white; }
+    color: white;
+    transition: all .3s;
+    padding: 0 3rem 0 3rem; }
     .footer__logo-link:hover {
-      background-image: linear-gradient(to right, #0ABFBC, #FC354C);
-      -webkit-background-clip: text;
-      color: transparent; }
+      color: white;
+      text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.6); }
 
 .footer__links {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   letter-spacing: 2px;
   list-style: none;
   font-weight: 500;
@@ -859,13 +861,25 @@ body, html {
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 0 auto; }
+    .footer__links-container__item {
+      flex: 1;
+      padding: 7rem 0 7rem 0; }
+      .footer__links-container__item-1 {
+        background-color: #3454b4; }
+      .footer__links-container__item-2 {
+        background-color: #2d499d; }
+      .footer__links-container__item-3 {
+        background-color: #273f87; }
+      .footer__links-container__item-4 {
+        background-color: #203470; }
   .footer__links-list {
-    margin: 0 auto; }
+    margin: 0 auto;
+    transition: all .3s;
+    padding: 0 2rem 0 2rem;
+    font-family: 'Work Sans', sans-serif; }
     .footer__links-list:hover {
       cursor: pointer;
-      background-image: linear-gradient(to top left, #4BC0C8, #C779D0, #FEAC5E);
-      -webkit-background-clip: text;
-      color: transparent; }
+      text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.6); }
 
 .footer__resource {
   color: white;
@@ -880,8 +894,9 @@ body, html {
   color: white;
   text-align: center;
   font-size: 1.5rem;
-  font-weight: bold;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-family: 'Work Sans', sans-serif; }
 
 .gallery {
   padding: 60rem 0 47rem 0;
