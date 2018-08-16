@@ -10,4 +10,16 @@ export class PokemonPC {
        this.pokemonBoxes[boxNumber].addPokemon(pokemon);
        return true;
     }
+    
+    getPokemon(boxNumber: number, pokemonIndex: number) {
+        if (boxNumber >= this.maxBoxes || !this.pokemonBoxes[boxNumber][pokemonIndex]) return null;
+        
+        return this.pokemonBoxes[boxNumber][pokemonIndex];
+    }
+    
+    releasePokemon(boxNumber: number, pokemonIndex: number) {
+        if (boxNumber >= this.maxBoxes) return false;
+        
+        return this.pokemonBoxes[boxNumber].releasePokemon(pokemonIndex);
+    }
 }

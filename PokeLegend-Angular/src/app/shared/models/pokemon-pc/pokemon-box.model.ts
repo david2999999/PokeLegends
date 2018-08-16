@@ -20,6 +20,15 @@ export class PokemonBox {
         return this.pokemonList[index];
     }
     
+    releasePokemon(index: number) {
+        if (!this.pokemonList[index]) {
+            return false;
+        }
+        
+        this.pokemonList.splice(index, 1);
+        return true;
+    }
+    
     numberOfPokemons() {
         return this.pokemonList.length;
     }
