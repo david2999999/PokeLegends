@@ -1,3 +1,3 @@
-export enum Gener {
+export enum Gender {
     Male, Female, Genderless
 }
