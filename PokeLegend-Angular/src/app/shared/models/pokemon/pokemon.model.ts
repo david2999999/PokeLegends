@@ -6,15 +6,19 @@ import { Multiplier } from './multiplier.model';
 import { Type } from './type.enum';
 
 export interface Pokemon {
-    pokemonId   : number;
-    name        : string;
-    nickName    : string;
-    gender      : Gender;
-    nature      : Nature;
-    exp         : Exp;
-    type        : Type[];
-    currentStat : Stat;
-    baseStat    : Stat;
-    maxStat     : Stat;
-    multiplier  : Multiplier;
+    pokemonId       : number;
+    name            : string;
+    nickName        : string;
+    gender          : Gender;
+    nature          : Nature;
+    exp             : Exp;
+    type            : Type[];
+    currentStat     : Stat;
+    baseStat        : Stat;
+    maxStat         : Stat;
+    multiplier      : Multiplier;
+
+    iconGifUrl      : string;
+    imageUrl        : string;
+    battleImageUrl  : string;
 }

@@ -8,7 +8,6 @@ import { PokeBallBag } from './pokeball-bag.model';
 import { TMBag } from './tm-bag.model';
 
 export interface Bag {
-    bagId           : number;
     battleItemBag   : BattleItemBag;
     berryBag        : BerryBag;
     itemBag         : ItemBag;
